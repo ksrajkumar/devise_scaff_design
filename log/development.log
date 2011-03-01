@@ -1,0 +1,416 @@
+  [1m[36mSQL (0.2ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20110210180347)
+Migrating to CreateCompanies (20110210181033)
+Migrating to CreatePeople (20110210181054)
+Migrating to CreateEmployees (20110210181155)
+Migrating to CreateDesignations (20110210181223)
+Migrating to CreateLocations (20110210181304)
+  [1m[35mSQL (0.2ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mdescribe `companies`[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW KEYS FROM `companies`
+  [1m[36mSQL (0.2ms)[0m  [1mdescribe `designations`[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW KEYS FROM `designations`
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `employees`[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW KEYS FROM `employees`
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `locations`[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW KEYS FROM `locations`
+  [1m[36mSQL (0.3ms)[0m  [1mdescribe `people`[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW KEYS FROM `people`
+  [1m[36mSQL (0.5ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW KEYS FROM `users`
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 11:50:42 +0530 2011
+  Processing by PeopleController#index as HTML
+Completed   in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:50:42 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 31ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:51:07 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1
+Completed   in 189ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 89ms (Views: 14.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:51:13 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1[0m
+Completed   in 90ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 87ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:12 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1
+Completed   in 90ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 88ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:21 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1[0m
+Completed   in 91ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 89ms (Views: 14.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:26 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1
+Completed   in 90ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 88ms (Views: 13.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:31 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1[0m
+Completed   in 89ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 87ms (Views: 13.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:37 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1
+Completed   in 90ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 147ms (Views: 14.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:50 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"jar_kumar87@yahoo.co.in"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'jar_kumar87@yahoo.co.in') LIMIT 1[0m
+Completed   in 90ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"jar_kumar87@yahoo.co.in"}}
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 87ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:53 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"jar_kumar87@yahoo.co.in"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'jar_kumar87@yahoo.co.in') LIMIT 1
+Completed   in 90ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"jar_kumar87@yahoo.co.in"}}
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 88ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:53:59 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"jar_kumar87@yahoo.co.in"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`email` = 'jar_kumar87@yahoo.co.in') LIMIT 1[0m
+Completed   in 89ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"jar_kumar87@yahoo.co.in"}}
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 154ms (Views: 79.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Tue Mar 01 11:54:44 +0530 2011
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/registrations/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 28ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Tue Mar 01 11:54:57 +0530 2011
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"dytM/8us7BmfwxzlbHoEj5ssPHZMJhxQDrl2U4M1XNc=", "utf8"=>"\342\234\223", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (LOWER(`users`.`email`) = LOWER('ksrajkumar87@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  describe `users`
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `users` (`email`, `reset_password_token`, `current_sign_in_ip`, `sign_in_count`, `updated_at`, `remember_created_at`, `created_at`, `current_sign_in_at`, `last_sign_in_ip`, `password_salt`, `remember_token`, `encrypted_password`, `last_sign_in_at`) VALUES ('ksrajkumar87@gmail.com', NULL, NULL, 0, '2011-03-01 06:24:58', NULL, '2011-03-01 06:24:58', NULL, NULL, '$2a$10$WgODapxKrfi8XwKV2FzU0e', NULL, '$2a$10$WgODapxKrfi8XwKV2FzU0eFhzEtm8km8P9UdSvgozwp/XFagKf9xO', NULL)[0m
+  [1m[35mSQL (2.0ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.5ms)[0m  UPDATE `users` SET `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2011-03-01 06:24:58', `current_sign_in_at` = '2011-03-01 06:24:58', `last_sign_in_ip` = '127.0.0.1', `last_sign_in_at` = '2011-03-01 06:24:58' WHERE (`users`.`id` = 3)
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 134ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 11:54:58 +0530 2011
+  Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+Rendered people/index.html.erb within layouts/application (71.4ms)
+Completed 200 OK in 98ms (Views: 75.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 11:56:31 +0530 2011
+  Processing by PeopleController#index as HTML
+Completed   in 8ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:56:31 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 29ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Tue Mar 01 11:56:41 +0530 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"QQeJFwXHAzmoXintxJ1mTvEMYwAZt/Ssn4M/Yz/jE2M=", "utf8"=>"\342\234\223", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"ksrajkumar87@gmail.com"}}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`email` = 'ksrajkumar87@gmail.com') LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.6ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2011-03-01 06:26:41', `updated_at` = '2011-03-01 06:26:41', `sign_in_count` = 2 WHERE (`users`.`id` = 3)
+  [1m[36mSQL (1.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 97ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 11:56:41 +0530 2011
+  Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+Rendered people/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 42ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 12:06:38 +0530 2011
+  Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+Rendered people/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 41ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Mar 01 12:09:28 +0530 2011
+
+ActionController::RoutingError (No route matches "/logout"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Mar 01 12:10:11 +0530 2011
+
+ActionController::RoutingError (No route matches "/logout"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 12:18:42 +0530 2011
+  Processing by PeopleController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1
+  [1m[36mPerson Load (0.1ms)[0m  [1mSELECT `people`.* FROM `people`[0m
+Rendered people/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 107ms (Views: 21.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Tue Mar 01 12:18:45 +0530 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 12:18:45 +0530 2011
+  Processing by PeopleController#index as HTML
+Completed   in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:18:45 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 31ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Tue Mar 01 12:18:58 +0530 2011
+
+ActionController::RoutingError (No route matches "/logout"):
+  
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 12:19:04 +0530 2011
+  Processing by PeopleController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+  [1m[35mPerson Load (0.1ms)[0m  SELECT `people`.* FROM `people`
+Rendered people/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 42ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Tue Mar 01 12:19:07 +0530 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 3) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 01 12:19:07 +0530 2011
+  Processing by PeopleController#index as HTML
+Completed   in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:19:07 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 35ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:23:56 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 31ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:24:40 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 35ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:29:31 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 32ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at Tue Mar 01 12:30:11 +0530 2011
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/registrations/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 31ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:30:14 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 33ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:33:41 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 30ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:34:24 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (70.3ms)
+Completed 200 OK in 90ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:34:49 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 32ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:35:43 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 29ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:37:57 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 34ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:39:12 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 31ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:39:55 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (65.2ms)
+Rendered devise/sessions/new.html.erb within layouts/application (75.6ms)
+Completed 200 OK in 94ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:41:16 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 31ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:42:06 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 32ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:44:08 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 32ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Tue Mar 01 12:48:04 +0530 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.4ms)
+Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 30ms (Views: 15.6ms | ActiveRecord: 0.0ms)
